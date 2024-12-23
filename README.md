@@ -37,7 +37,7 @@ Admin:
     - Password
     - Konfirmasi Password
 
-   ![Form Input berupa Register](https://github.com/bagas017/UAS-Pemweb_Bagas-Andreanto_122140017/assets_readme/1_register.gif)
+![Form Input berupa Register](https://github.com/bagas017/UAS-Pemweb_Bagas-Andreanto_122140017/assets_readme/1_register.gif)
 
 - **Tabel HTML**:
   - Data pendaftaran ditampilkan dalam tabel di halaman `users.php` menggunakan kombinasi PHP dan HTML.
