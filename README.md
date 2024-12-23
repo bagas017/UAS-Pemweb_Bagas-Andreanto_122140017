@@ -145,19 +145,29 @@ Admin:
 
 ---
 
-## Cara Instalasi
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/username/f1-academy-platform.git
-   ```
-2. Masuk ke direktori proyek:
-   ```bash
-   cd f1-academy-platform
-   ```
-3. Konfigurasi database:
-   - Buat database MySQL.
-   - Import file `database.sql`.
-   - Edit file `config.php` sesuai pengaturan database Anda.
-4. Jalankan server lokal:
-   - Gunakan XAMPP atau WAMP untuk menjalankan server PHP.
+## Jawaban Pertanyaan Bonus
+
+### 1. Langkah-langkah Meng-host Aplikasi Web (5%)
+1. Memilih penyedia hosting web (contoh: Heroku, Vercel, atau cPanel hosting).
+2. Konfigurasi file aplikasi agar kompatibel dengan hosting.
+3. Unggah kode aplikasi melalui FTP, Git, atau antarmuka penyedia hosting.
+4. Mengatur konfigurasi database pada server (import file SQL).
+5. Verifikasi aplikasi berjalan dengan baik di hosting.
+
+### 2. Penyedia Hosting yang Dipilih (5%)
+Penyedia hosting yang dipilih adalah **Heroku** karena mendukung aplikasi berbasis PHP dan memiliki integrasi mudah dengan Git untuk deployment otomatis.
+
+### 3. Keamanan Aplikasi Web (5%)
+- **Validasi Input:** Semua data yang diterima dari pengguna divalidasi sebelum diproses.
+- **HTTPS:** Gunakan protokol HTTPS untuk komunikasi aman.
+- **Hashing Password:** Password pengguna di-hash menggunakan algoritma seperti bcrypt sebelum disimpan.
+- **Firewall:** Konfigurasi firewall untuk melindungi server dari serangan.
+- **Pembaruan Rutin:** Perbarui semua library dan framework yang digunakan.
+
+### 4. Konfigurasi Server (5%)
+- **PHP:** Versi PHP 7.4 atau lebih tinggi.
+- **Database:** MySQL dengan pengaturan koneksi aman.
+- **Environment Variables:** Konfigurasi file `.env` untuk menyimpan informasi sensitif seperti kredensial database.
+- **Error Logging:** Aktifkan logging untuk melacak error dan debugging.
+- **Caching:** Implementasikan caching untuk meningkatkan kinerja aplikasi.
 
