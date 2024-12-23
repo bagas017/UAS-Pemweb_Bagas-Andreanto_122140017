@@ -55,7 +55,7 @@ Admin:
   - Format email harus valid.
   - Password dan konfirmasi password harus cocok.
 
-   ![Event Handling & Validasi JS](https://github.com/username/repository/raw/main/demo.gif)
+   ![Event Handling & Validasi JS](assets_readme/3_eventValidasi.gif)
   
 ---
 
@@ -68,7 +68,7 @@ Admin:
 - **Penyimpanan Data:**
   - Data pengguna, IP address, dan jenis browser disimpan di database pada proses registrasi.
  
-   ![Penambahan data ke Database](https://github.com/username/repository/raw/main/demo.gif)
+   ![Penambahan data ke Database](assets_readme/4_tambahData.gif)
 
 #### 2.2 Objek PHP Berbasis OOP (10%)
 - **Class RaceManager:**
@@ -77,7 +77,7 @@ Admin:
 - **Penggunaan Objek:**
   - Objek digunakan di `registerace.php` dan `read.php` untuk menangani data race.
 
-  ![OOP](https://github.com/username/repository/raw/main/image.png)
+  ![OOP](assets_readme/5_OOP.png)
 
 ---
 
@@ -85,13 +85,14 @@ Admin:
 #### 3.1 Pembuatan Tabel Database (5%)
 - Tabel `users` dan `race_registration` dibuat untuk menyimpan data.
 
-  ![Tabel users pada Database](https://github.com/username/repository/raw/main/image.png)
-  ![Tabel race_registration pada Database](https://github.com/username/repository/raw/main/image.png)
+  ![Tabel users pada Database](assets_readme/7_database2.png)
+  
+  ![Tabel race_registration pada Database](assets_readme/6_database1.png)
 
 #### 3.2 Konfigurasi Koneksi Database (5%)
 - `config.php` digunakan untuk koneksi ke database.
 
-  ![config menghubungkan ke database](https://github.com/username/repository/raw/main/image.png)
+  ![config menghubungkan ke database](assets_readme/8_config.png)
 
 #### 3.3 Manipulasi Data pada Database (10%)
 - **CRUD Operations:**
@@ -100,7 +101,7 @@ Admin:
   - Ubah data race di `update.php`.
   - Hapus data race di `delete.php`.
 
-   ![Operasi CRUD](https://github.com/username/repository/raw/main/demo.gif)
+   ![Operasi CRUD](assets_readme/9_crud.gif)
 
 ---
 
@@ -116,7 +117,7 @@ Admin:
 - **Cookie:**
   - Token pengguna disimpan di cookie saat login dan dihapus saat logout.
 
-  ![Cookie](https://github.com/username/repository/raw/main/demo.gif)
+  ![Cookie](assets_readme/10_cookie.gif)
   
 - **Browser Storage:**
   - LocalStorage digunakan di `registerace.php` untuk menyimpan data form secara lokal.
