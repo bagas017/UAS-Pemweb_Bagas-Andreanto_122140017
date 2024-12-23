@@ -1,5 +1,5 @@
 # UAS-Pemweb_Bagas-Andreanto_122140017
-# F1 Academy Platform
+# F1 Academy Website
 
 ## Data Diri
 - Nama: Bagas Andreanto
@@ -7,11 +7,22 @@
 - Kelas: Pemrograman Web RA
 
 ## Deskripsi Proyek
-Platform website ini dirancang untuk mendukung proses registrasi balapan dari akademi F1 yang merupakan lanjutan dari projek UTS. Pada web ini terdapat dua jenis user yaitu Pembalap, dan Admin. Untuk user sebagai pembalap dapat melakukan registrasi dengan username, akun, dan password. Kemudian dapat login ke website dengan akun dan password yang sudah di daftarkan sebelumnya. 
-Setelah login user akan berada pada halaman dahboard yang merupakan halaman pendaftaran untuk Race dengan terdapat tabel para pendaftar, tombol daftar, tombol data user, beberapa tombol operasi tabel seperti read, update, dan delete, serta tombol logout untuk keluar.
-User (pembalap) dapat melakukan pendaftaran dengan mengklik tombol daftar race baru.
+Platform website ini dirancang untuk mendukung proses registrasi balapan dari akademi F1 yang merupakan lanjutan dari projek UTS. Pada web ini terdapat dua jenis user yaitu Pembalap, dan Admin. User dapat melakukan register dengan meninputkan username, email, dan password, kemudian login untuk dapat mengakses website. 
+Pada halaman dashboard, user dapat menambahkan data pendaftaran (Create), membuka data (Read), memperbarui data (Update), dan menghapus data (Delete).
 
-Platform ini dirancang untuk mendukung proses registrasi, manajemen data, dan otentikasi pengguna untuk F1 Academy. Sistem ini mengintegrasikan komponen client-side dan server-side untuk memenuhi ketentuan UAS Pemrograman Web.
+### Perbedaan hak akses untuk user:
+Pembalap:
+- hanya dapat melihat data user lain, tidak dapat menerapkan operasi update dan delete.
+- tidak bisa mengakses data pengguna
+
+Admin:
+- bisa melakukan operasi CRUD pada semua data pengguna
+- dapat mengakses informasi data pengguna (melihat alamat ip dan jenis browser pengguna)
+
+### Akun Admin
+- username: admin
+- email: admin@f1.com
+- password: admin123
 
 ---
 
@@ -25,8 +36,14 @@ Platform ini dirancang untuk mendukung proses registrasi, manajemen data, dan ot
     - Email
     - Password
     - Konfirmasi Password
+
+   ![Form Input berupa Register](https://github.com/username/repository/raw/main/demo.gif)
+
 - **Tabel HTML**:
-  - Data pendaftaran ditampilkan dalam tabel di halaman `dashboard.php` menggunakan kombinasi PHP dan HTML.
+  - Data pendaftaran ditampilkan dalam tabel di halaman `users.php` menggunakan kombinasi PHP dan HTML.
+ 
+  ![Tabel Users](https://github.com/username/repository/raw/main/image.png)
+
 
 #### 1.2 Event Handling (15%)
 - **Event Handling:**
@@ -39,6 +56,8 @@ Platform ini dirancang untuk mendukung proses registrasi, manajemen data, dan ot
   - Format email harus valid.
   - Password dan konfirmasi password harus cocok.
 
+   ![Event Handling & Validasi JS](https://github.com/username/repository/raw/main/demo.gif)
+  
 ---
 
 ### 2. Server-side Programming (Bobot: 30%)
@@ -49,6 +68,8 @@ Platform ini dirancang untuk mendukung proses registrasi, manajemen data, dan ot
   - Data divalidasi sebelum disimpan ke database.
 - **Penyimpanan Data:**
   - Data pengguna, IP address, dan jenis browser disimpan di database pada proses registrasi.
+ 
+   ![Penambahan data ke Database](https://github.com/username/repository/raw/main/demo.gif)
 
 #### 2.2 Objek PHP Berbasis OOP (10%)
 - **Class RaceManager:**
@@ -57,14 +78,21 @@ Platform ini dirancang untuk mendukung proses registrasi, manajemen data, dan ot
 - **Penggunaan Objek:**
   - Objek digunakan di `registerace.php` dan `read.php` untuk menangani data race.
 
+  ![OOP](https://github.com/username/repository/raw/main/image.png)
+
 ---
 
 ### 3. Database Management (Bobot: 20%)
 #### 3.1 Pembuatan Tabel Database (5%)
 - Tabel `users` dan `race_registration` dibuat untuk menyimpan data.
 
+  ![Tabel users pada Database](https://github.com/username/repository/raw/main/image.png)
+  ![Tabel race_registration pada Database](https://github.com/username/repository/raw/main/image.png)
+
 #### 3.2 Konfigurasi Koneksi Database (5%)
 - `config.php` digunakan untuk koneksi ke database.
+
+  ![config menghubungkan ke database](https://github.com/username/repository/raw/main/image.png)
 
 #### 3.3 Manipulasi Data pada Database (10%)
 - **CRUD Operations:**
@@ -72,6 +100,8 @@ Platform ini dirancang untuk mendukung proses registrasi, manajemen data, dan ot
   - Tampilkan data di `dashboard.php`.
   - Ubah data race di `update.php`.
   - Hapus data race di `delete.php`.
+
+   ![Operasi CRUD](https://github.com/username/repository/raw/main/demo.gif)
 
 ---
 
@@ -81,9 +111,14 @@ Platform ini dirancang untuk mendukung proses registrasi, manajemen data, dan ot
   - Sesi dimulai dengan `session_start()`.
   - Informasi pengguna seperti `user_id`, `username`, dan token disimpan dalam session.
 
+  ![Session](https://github.com/username/repository/raw/main/image.png)
+
 #### 4.2 Pengelolaan State dengan Cookie dan Browser Storage (10%)
 - **Cookie:**
   - Token pengguna disimpan di cookie saat login dan dihapus saat logout.
+
+  ![Cookie](https://github.com/username/repository/raw/main/demo.gif)
+  
 - **Browser Storage:**
   - LocalStorage digunakan di `registerace.php` untuk menyimpan data form secara lokal.
 
