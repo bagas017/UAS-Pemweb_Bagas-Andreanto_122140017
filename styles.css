@@ -1,0 +1,387 @@
+body {
+    font-family: Libre Franklin;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.login-page-container {
+    background-image: url('assets/car-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-content {
+    color: #eeeff3;
+    margin: 20px;
+    width: 65%;
+    height: 65%;
+    background: rgba(15, 26, 30, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.4px);
+    -webkit-backdrop-filter: blur(11.4px);
+    border: 1px solid rgba(15, 26, 30, 0.21);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    margin-left: 30px;
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.deskripsi{
+    width: 100%;
+    text-align: left;
+    font-family: libre franklin;
+    font-size: 1rem; 
+}
+
+
+#btnRegister{
+    margin: 10px;
+    width: 130px;
+    font-family: Rubik;
+    padding: 10px 20px;
+    background-color: #ffffff00;
+    color: #ffffff;
+    border: #DD0341 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+#btnLogin{
+    margin: 10px;
+    width: 130px;
+    font-family: Rubik;
+    padding: 10px 20px;
+    background-color: #DD0341;
+    color: #ffffff;
+    border: #DD0341 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#btnLogin:hover {
+    background-color: #870328;
+    border: #870328 2px solid;
+}
+#btnRegister:hover {
+    background-color: #ffffffd0;
+    color: #870328;
+    border: #870328 2px solid;
+}
+
+.form-container button{
+    width: 130px;
+    font-family: Rubik;
+    padding: 10px 20px;
+    background-color: #DD0341;
+    color: #ffffff;
+    border: #DD0341 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-container button:hover {
+    background-color: #870328;
+    border: #870328 2px solid;
+}
+
+.form-container {
+    height: 100%;
+    width: 40%;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(15, 26, 30, 0.984);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.form-container h2 {
+    font-size: 2rem;
+    display: block;
+    margin-top: 50px;
+    font-family: Roboto;
+    text-align: center;
+}
+
+.form-container form {
+    margin-left: 50px;;
+    margin-right: 50px;;
+    width: 300px;
+}
+
+#registerForm label{
+    font-family: libre franklin;
+    font-size: smaller;
+}
+#loginForm label{
+    font-family: libre franklin;
+    font-size: smaller;
+}
+
+.form-container input {
+    color: #f4f4f9;
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    background: rgba(25, 38, 43, 0.966);
+    border-radius: 10px;
+    border: 1px solid rgba(94, 94, 94, 0.366);
+}
+
+/* Halaman Dashboard */
+
+.welcome-message h2 {
+    text-align: center;
+    font-family: Libre Franklin;
+    font-size: 1.7rem;
+}
+
+.action-buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.button-data, .button-daftar {
+    display: inline-block;
+
+    padding: 5px 10px;
+    background-color: #0b2d3b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button-data:hover, .button-daftar:hover {
+    background-color: #025173;
+}
+
+.button-read {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #00b409;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-read:hover {
+    background-color: #006e00;
+}
+
+.button-update {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #c1c402;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-update:hover {
+    background-color: #808000;
+}
+
+.button-delete {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #b40000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-delete:hover {
+    background-color: #800000;
+} 
+
+
+
+.button-logout {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #b40000; 
+    margin-left: 10px;
+}
+
+.button-logout:hover {
+    background-color: rgb(131, 18, 18); 
+}
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Roboto;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #0b2d3b;
+    color: white;
+}
+
+.title-daftar-race{
+    text-align: center;
+    font-family: Libre Franklin;
+    font-size: 1.7rem;
+}
+
+
+.form-daftar-race{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-daftar-race label {
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.form-daftar-race input[type="text"],
+.form-daftar-race input[type="date"],
+.form-daftar-race select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-daftar-race {
+    background-color: #DD0341;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn-daftar-race:hover {
+    background-color: #870328;
+}
+
+.title-update-race{
+    text-align: center;
+    font-family: Libre Franklin;
+    font-size: 1.7rem;
+}
+
+.form-update-race{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-update-race label {
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+}    
+
+.form-update-race input[type="text"],
+.form-update-race input[type="date"],
+.form-update-race select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-update-race {
+    background-color: #DD0341;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn-update-race:hover {
+    background-color: #870328;
+}
+
+.button-back-read{
+    background-color: #DD0341;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    max-width: 400px;   
+}
+
+.button-back-read:hover {
+    background-color: #870328;
+}
+
+
