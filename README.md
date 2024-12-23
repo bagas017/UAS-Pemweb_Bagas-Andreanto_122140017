@@ -24,6 +24,8 @@ Admin:
 - email: admin@f1.com
 - password: admin123
 
+![Akun Admin](assets_readme/admin.gif)
+
 ---
 
 ## Struktur Proyek
@@ -111,7 +113,7 @@ Admin:
   - Sesi dimulai dengan `session_start()`.
   - Informasi pengguna seperti `user_id`, `username`, dan token disimpan dalam session.
 
-  ![Session](https://github.com/username/repository/raw/main/image.png)
+  ![Session](assets_readme/session.png)
 
 #### 4.2 Pengelolaan State dengan Cookie dan Browser Storage (10%)
 - **Cookie:**
@@ -159,7 +161,3 @@ Admin:
 4. Jalankan server lokal:
    - Gunakan XAMPP atau WAMP untuk menjalankan server PHP.
 
----
-
-## Lisensi
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
